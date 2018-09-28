@@ -1,0 +1,10 @@
+{
+    "extends": ["standard", "standard-react", "plugin:jest/recommended"],
+    "rules": {
+        "semi": ["error", "always"],
+        "space-before-function-paren": "off"
+    },
+    "env": {
+        "browser": true
+    }
+}

@@ -1,0 +1,74 @@
+{
+  "name": "@jamesmcewan/mce-starter",
+  "version": "0.0.1",
+  "description": "testing npm init",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "test:ci": "jest",
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js",
+    "lint:js": "eslint src/**/*.js --fix",
+    "lint:css": "stylelint './src/**/*.js' --fix",
+    "lint": "npm run lint:js && npm run lint:css",
+    "format": "prettier --write 'src/**/*.js'"
+  },
+  "author": "James McEwan",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^0.1.19",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "enzyme-to-json": "^3.3.4",
+    "eslint": "^5.6.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-react": "^7.0.2",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.22.1",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^2.7.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.0.1",
+    "initit": "^1.0.0-2",
+    "jest": "^23.6.0",
+    "jest-fetch-mock": "^1.6.6",
+    "jest-styled-components": "^6.2.1",
+    "prettier": "^1.14.3",
+    "regenerator-runtime": "^0.12.1",
+    "stylelint": "^9.6.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.4.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-merge": "^4.1.4"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./setupJest.js",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ]
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.7.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "styled-components": "^3.4.9"
+  }
+}
