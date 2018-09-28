@@ -1,6 +1,6 @@
 {
-  "name": "@jamesmcewan/mce-starter",
-  "version": "0.0.1",
+  "name": "mce-starter",
+  "private": true,
   "description": "testing npm init",
   "main": "index.js",
   "scripts": {
